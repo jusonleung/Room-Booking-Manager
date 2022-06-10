@@ -1,0 +1,52 @@
+*** Room Booking Manager – Summary Report ***
+
+Performance:
+
+  For PRIO:
+		Total Number of Bookings Received: 203
+		      Number of Bookings Assigned: 88 (43.35%)
+		      Number of Bookings Rejected: 115 (56.65%)
+
+		Utilization of Time Slot:
+		      room_A        - 61.31%
+		      room_B        - 60.12%
+		      room_C        - 60.71%
+		      webcam_FHD_1  - 55.36%
+		      webcam_FHD_2  - 17.86%
+		      webcam_UHD    - 41.07%
+		      monitor_50_1  - 39.88%
+		      monitor_50_2  - 33.93%
+		      monitor_75    - 41.07%
+		      projector_2K_1- 52.38%
+		      projector_2K_2- 11.31%
+		      projector_4K  - 44.64%
+		      screen_100_1  - 56.55%
+		      screen_100_2  - 27.98%
+		      screen_150    - 39.88%
+
+		Invalid request(s) made: 0
+
+  For FCFS:
+		Total Number of Bookings Received: 203
+		      Number of Bookings Assigned: 113 (55.67%)
+		      Number of Bookings Rejected: 90 (44.33%)
+
+		Utilization of Time Slot:
+		      room_A        - 77.98%
+		      room_B        - 80.95%
+		      room_C        - 101.19%
+		      webcam_FHD_1  - 82.14%
+		      webcam_FHD_2  - 29.76%
+		      webcam_UHD    - 40.48%
+		      monitor_50_1  - 44.05%
+		      monitor_50_2  - 26.79%
+		      monitor_75    - 22.62%
+		      projector_2K_1- 41.07%
+		      projector_2K_2- 10.71%
+		      projector_4K  - 55.36%
+		      screen_100_1  - 48.81%
+		      screen_100_2  - 28.57%
+		      screen_150    - 50.60%
+
+		Invalid request(s) made: 0
+

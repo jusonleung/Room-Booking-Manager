@@ -1,0 +1,883 @@
+*** Room Booking - ACCEPTED / PRIO ***
+
+Tenant_A has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   22:00   25:00   Meeting       room_A     *
+2021-05-13   04:00   08:00   Presentation  room_A     projector_2K
+                                                      screen_100
+2021-05-15   04:00   10:00   *             *          monitor_50
+                                                      
+2021-05-10   06:00   11:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-11   03:00   04:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-15   16:00   23:00   *             *          projector_2K
+                                                      
+2021-05-12   20:00   22:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-15   00:00   09:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-10   20:00   21:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-11   15:00   24:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-14   10:00   19:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-12   12:00   20:00   *             *          projector_2K
+                                                      
+2021-05-13   00:00   07:00   *             *          monitor_50
+                                                      
+2021-05-10   09:00   10:00   Presentation  room_B     webcam_FHD
+                                                      monitor_50
+2021-05-13   09:00   14:00   Presentation  room_A     projector_2K
+                                                      screen_100
+2021-05-11   08:00   09:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   04:00   07:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-16   23:00   24:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-16   13:00   23:00   Presentation  room_B     projector_2K
+                                                      screen_100
+
+Tenant_B has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   05:00   07:00   Meeting       room_C     *
+2021-05-12   19:00   20:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-14   22:00   24:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+2021-05-16   15:00   19:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-12   21:00   24:00   Meeting       room_A     projector_2K
+                                                      screen_100
+2021-05-12   08:00   09:00   Meeting       room_C     *
+2021-05-15   23:00   26:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-16   00:00   02:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-14   16:00   20:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-12   15:00   20:00   *             *          screen_100
+                                                      
+2021-05-13   06:00   11:00   *             *          monitor_50
+                                                      
+2021-05-10   06:00   11:00   *             *          screen_100
+                                                      
+2021-05-13   17:00   21:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-13   23:00   27:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   16:00   22:00   *             *          monitor_50
+                                                      
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   12:00   15:00   *             *          projector_4K
+                                                      
+2021-05-15   11:00   20:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-15   12:00   14:00   *             *          screen_150
+                                                      
+2021-05-11   14:00   17:00   *             *          webcam_FHD
+                                                      
+2021-05-15   19:00   31:00   Conference    room_B     webcam_FHD
+                                                      monitor_50
+2021-05-10   23:00   31:00   Conference    room_B     projector_2K
+                                                      screen_100
+2021-05-12   04:00   12:00   Presentation  room_B     webcam_FHD
+                                                      monitor_50
+2021-05-16   05:00   10:00   *             *          projector_2K
+                                                      
+2021-05-11   10:00   18:00   *             *          monitor_50
+                                                      
+2021-05-12   15:00   18:00   Meeting       room_B     *
+2021-05-13   00:00   05:00   Meeting       room_C     *
+2021-05-13   11:00   21:00   Meeting       room_B     webcam_UHD
+                                                      monitor_75
+2021-05-11   14:00   15:00   Meeting       room_C     projector_2K
+                                                      screen_100
+2021-05-10   15:00   16:00   *             *          webcam_FHD
+                                                      
+2021-05-14   12:00   16:00   *             *          projector_2K
+                                                      
+2021-05-10   12:00   20:00   Meeting       room_A     *
+2021-05-13   20:00   29:00   *             *          screen_100
+                                                      
+2021-05-11   05:00   16:00   *             *          screen_100
+                                                      
+2021-05-11   18:00   22:00   Presentation  room_B     projector_2K
+                                                      screen_100
+
+Tenant_D has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   20:00   27:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-12   02:00   07:00   Conference    room_A     projector_2K
+                                                      screen_100
+2021-05-10   06:00   09:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-11   17:00   25:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-12   08:00   16:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   12:00   15:00   Meeting       room_A     webcam_FHD
+                                                      monitor_50
+2021-05-14   05:00   09:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-12   21:00   32:00   Presentation  room_B     webcam_UHD
+                                                      monitor_75
+2021-05-10   12:00   19:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-12   05:00   06:00   *             *          projector_4K
+                                                      
+2021-05-16   20:00   22:00   *             *          screen_100
+                                                      
+
+Tenant_E has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-14   02:00   14:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-10   00:00   01:00   Presentation  room_A     projector_4K
+                                                      screen_150
+2021-05-15   00:00   11:00   *             *          screen_100
+                                                      
+2021-05-12   20:00   26:00   *             *          projector_4K
+                                                      
+2021-05-11   09:00   12:00   Meeting       room_A     webcam_UHD
+                                                      monitor_75
+2021-05-16   12:00   20:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-15   05:00   17:00   Meeting       room_B     projector_2K
+                                                      screen_100
+2021-05-11   11:00   14:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-13   09:00   11:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-15   12:00   18:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-12   03:00   07:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-10   01:00   03:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-13   05:00   16:00   *             *          screen_100
+                                                      
+2021-05-15   05:00   13:00   *             *          monitor_50
+                                                      
+2021-05-13   03:00   08:00   *             *          projector_2K
+                                                      
+2021-05-12   01:00   04:00   *             *          webcam_FHD
+                                                      
+2021-05-14   18:00   28:00   *             *          screen_100
+                                                      
+2021-05-12   12:00   19:00   Presentation  room_C     webcam_UHD
+                                                      monitor_75
+2021-05-16   02:00   14:00   *             *          monitor_50
+                                                      
+2021-05-16   11:00   12:00   Presentation  room_C     projector_2K
+                                                      screen_100
+2021-05-14   11:00   21:00   Presentation  room_B     webcam_FHD
+                                                      monitor_50
+2021-05-10   10:00   22:00   Presentation  room_B     projector_2K
+                                                      screen_100
+2021-05-16   05:00   09:00   Meeting       room_A     webcam_UHD
+                                                      monitor_75
+2021-05-11   03:00   04:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+
+===========================================================================
+*** Room Booking - REJECTED / PRIO ***
+
+Tenant_A has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   11:00   18:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-10   15:00   18:00   Meeting       *          *
+2021-05-10   05:00   16:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-13   16:00   27:00   *             *          webcam_UHD
+                                                      
+2021-05-10   06:00   10:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-12   10:00   17:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-14   21:00   25:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-13   23:00   32:00   Conference    *          webcam_FHD
+                                                      monitor_50
+2021-05-13   04:00   14:00   Meeting       *          *
+2021-05-12   22:00   28:00   *             *          webcam_UHD
+                                                      
+2021-05-13   04:00   06:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-16   18:00   19:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-16   10:00   21:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-12   16:00   25:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-15   20:00   25:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-11   17:00   19:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-15   11:00   16:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-15   09:00   19:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-13   15:00   25:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-11   01:00   13:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-15   23:00   29:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   07:00   15:00   Meeting       *          *
+2021-05-13   19:00   29:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-11   18:00   28:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+
+Tenant_B has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   18:00   21:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-16   22:00   24:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-14   13:00   21:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-11   11:00   16:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-16   06:00   18:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-15   22:00   32:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-13   23:00   30:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-16   19:00   24:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-10   11:00   16:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-12   17:00   28:00   Meeting       *          *
+2021-05-15   23:00   32:00   *             *          webcam_FHD
+                                                      
+2021-05-13   09:00   21:00   *             *          screen_100
+                                                      
+2021-05-15   16:00   21:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-13   22:00   33:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-14   13:00   18:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-13   08:00   18:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-15   06:00   08:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-14   13:00   16:00   *             *          screen_150
+                                                      
+2021-05-10   02:00   04:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-16   13:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-13   07:00   13:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   17:00   24:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-11   18:00   27:00   Meeting       *          *
+2021-05-11   17:00   23:00   Meeting       *          *
+2021-05-10   04:00   13:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-15   13:00   18:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-11   08:00   20:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-12   12:00   18:00   *             *          webcam_UHD
+                                                      
+2021-05-10   02:00   05:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-11   22:00   26:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-16   21:00   24:00   *             *          screen_150
+                                                      
+2021-05-11   14:00   17:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-16   15:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+2021-05-15   12:00   22:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-16   15:00   16:00   *             *          projector_4K
+                                                      
+2021-05-14   20:00   31:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-14   23:00   28:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-12   04:00   15:00   Conference    *          projector_4K
+                                                      screen_150
+2021-05-11   17:00   28:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-14   06:00   11:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   07:00   15:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-13   17:00   28:00   Meeting       *          *
+2021-05-11   23:00   27:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-13   06:00   12:00   Conference    *          webcam_UHD
+                                                      monitor_75
+
+Tenant_D has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   19:00   24:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-10   18:00   24:00   Meeting       *          *
+2021-05-12   23:00   32:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-14   11:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-16   07:00   16:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-13   06:00   09:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-15   17:00   24:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-10   17:00   26:00   Conference    *          webcam_FHD
+                                                      monitor_50
+2021-05-16   12:00   24:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-14   07:00   09:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-12   01:00   06:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-10   18:00   26:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-16   03:00   14:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-16   13:00   24:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-13   18:00   22:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-10   15:00   24:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-15   14:00   21:00   Conference    *          projector_4K
+                                                      screen_150
+2021-05-14   16:00   26:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-16   02:00   10:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-10   13:00   24:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-12   06:00   13:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-14   20:00   26:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   16:00   20:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-10   19:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-14   08:00   14:00   *             *          webcam_FHD
+                                                      
+
+Tenant_E has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   02:00   12:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-11   11:00   19:00   *             *          screen_100
+                                                      
+2021-05-13   13:00   19:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-14   10:00   17:00   *             *          webcam_UHD
+                                                      
+2021-05-16   04:00   16:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-12   12:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   12:00   22:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-13   20:00   29:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-11   22:00   26:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-16   07:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+2021-05-12   04:00   05:00   *             *          monitor_50
+                                                      
+2021-05-10   01:00   04:00   Meeting       *          *
+2021-05-10   17:00   27:00   Meeting       *          *
+2021-05-14   03:00   08:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   22:00   29:00   Meeting       *          *
+2021-05-10   08:00   19:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-14   16:00   20:00   Meeting       *          *
+2021-05-13   18:00   27:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-11   17:00   24:00   Presentation  *          projector_4K
+                                                      screen_150
+
+===========================================================================
+*** Room Booking - ACCEPTED / FCFS ***
+
+Tenant_A has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   22:00   25:00   Meeting       room_A     *
+2021-05-13   04:00   08:00   Presentation  room_B     projector_2K
+                                                      screen_100
+2021-05-15   04:00   10:00   *             *          monitor_50
+                                                      
+2021-05-13   11:00   18:00   Meeting       room_C     projector_2K
+                                                      screen_100
+2021-05-10   06:00   11:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-11   03:00   04:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-15   16:00   23:00   *             *          projector_2K
+                                                      
+2021-05-12   20:00   22:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-15   00:00   09:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-10   20:00   21:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-13   16:00   27:00   *             *          webcam_UHD
+                                                      
+2021-05-11   15:00   24:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-14   10:00   19:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-12   10:00   17:00   Meeting       room_C     webcam_FHD
+                                                      monitor_50
+2021-05-12   12:00   20:00   *             *          projector_2K
+                                                      
+2021-05-12   22:00   28:00   *             *          webcam_UHD
+                                                      
+2021-05-16   18:00   19:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-13   00:00   07:00   *             *          monitor_50
+                                                      
+2021-05-10   09:00   10:00   Presentation  room_C     webcam_FHD
+                                                      monitor_50
+2021-05-13   09:00   14:00   Presentation  room_A     projector_2K
+                                                      screen_100
+2021-05-11   08:00   09:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   04:00   07:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-16   23:00   24:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-16   13:00   23:00   Presentation  room_B     projector_2K
+                                                      screen_100
+
+Tenant_B has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   05:00   07:00   Meeting       room_C     *
+2021-05-12   19:00   20:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-10   18:00   21:00   Presentation  room_B     projector_4K
+                                                      screen_150
+2021-05-14   22:00   24:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+2021-05-16   15:00   19:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-12   21:00   24:00   Meeting       room_A     projector_2K
+                                                      screen_100
+2021-05-11   11:00   16:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-12   08:00   09:00   Meeting       room_C     *
+2021-05-16   06:00   18:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-15   23:00   26:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-12   17:00   28:00   Meeting       room_B     *
+2021-05-16   00:00   02:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-14   16:00   20:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-12   15:00   20:00   *             *          screen_100
+                                                      
+2021-05-13   22:00   33:00   Meeting       room_B     projector_4K
+                                                      screen_150
+2021-05-14   13:00   18:00   Meeting       room_B     projector_2K
+                                                      screen_100
+2021-05-13   06:00   11:00   *             *          monitor_50
+                                                      
+2021-05-10   06:00   11:00   *             *          screen_100
+                                                      
+2021-05-13   17:00   21:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-13   23:00   27:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   16:00   22:00   *             *          monitor_50
+                                                      
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   10:00   17:00   Meeting       room_C     *
+2021-05-15   17:00   24:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+2021-05-11   18:00   27:00   Meeting       room_C     *
+2021-05-13   12:00   15:00   *             *          projector_4K
+                                                      
+2021-05-15   11:00   20:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-15   12:00   14:00   *             *          screen_150
+                                                      
+2021-05-11   17:00   23:00   Meeting       room_A     *
+2021-05-11   14:00   17:00   *             *          webcam_FHD
+                                                      
+2021-05-10   04:00   13:00   Presentation  room_B     webcam_UHD
+                                                      monitor_75
+2021-05-15   19:00   31:00   Conference    room_B     webcam_FHD
+                                                      monitor_50
+2021-05-10   23:00   31:00   Conference    room_B     projector_2K
+                                                      screen_100
+2021-05-12   12:00   18:00   *             *          webcam_UHD
+                                                      
+2021-05-12   04:00   12:00   Presentation  room_B     webcam_FHD
+                                                      monitor_50
+2021-05-16   05:00   10:00   *             *          projector_2K
+                                                      
+2021-05-11   10:00   18:00   *             *          monitor_50
+                                                      
+2021-05-12   15:00   18:00   Meeting       room_A     *
+2021-05-13   00:00   05:00   Meeting       room_C     *
+2021-05-13   11:00   21:00   Meeting       room_B     webcam_UHD
+                                                      monitor_75
+2021-05-11   14:00   15:00   Meeting       room_C     projector_2K
+                                                      screen_100
+2021-05-10   15:00   16:00   *             *          webcam_FHD
+                                                      
+2021-05-14   12:00   16:00   *             *          projector_2K
+                                                      
+2021-05-10   12:00   20:00   Meeting       room_A     *
+2021-05-13   20:00   29:00   *             *          screen_100
+                                                      
+2021-05-11   05:00   16:00   *             *          screen_100
+                                                      
+2021-05-11   18:00   22:00   Presentation  room_B     projector_2K
+                                                      screen_100
+
+Tenant_D has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   19:00   24:00   Presentation  room_C     projector_4K
+                                                      screen_150
+2021-05-10   20:00   27:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+2021-05-10   18:00   24:00   Meeting       room_C     *
+2021-05-12   02:00   07:00   Conference    room_A     projector_2K
+                                                      screen_100
+2021-05-10   06:00   09:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-11   17:00   25:00   Conference    room_B     projector_4K
+                                                      screen_150
+2021-05-14   07:00   09:00   Meeting       room_A     webcam_FHD
+                                                      monitor_50
+2021-05-12   08:00   16:00   Conference    room_A     projector_4K
+                                                      screen_150
+2021-05-16   12:00   15:00   Meeting       room_A     webcam_FHD
+                                                      monitor_50
+2021-05-13   18:00   22:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-14   05:00   09:00   Presentation  room_A     webcam_FHD
+                                                      monitor_50
+2021-05-12   21:00   32:00   Presentation  room_B     webcam_UHD
+                                                      monitor_75
+2021-05-10   12:00   19:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-12   05:00   06:00   *             *          projector_4K
+                                                      
+2021-05-16   20:00   22:00   *             *          screen_100
+                                                      
+
+Tenant_E has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   02:00   12:00   Meeting       room_A     projector_4K
+                                                      screen_150
+2021-05-14   02:00   14:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-10   00:00   01:00   Presentation  room_A     projector_4K
+                                                      screen_150
+2021-05-15   00:00   11:00   *             *          screen_100
+                                                      
+2021-05-12   20:00   26:00   *             *          projector_4K
+                                                      
+2021-05-11   09:00   12:00   Meeting       room_A     webcam_UHD
+                                                      monitor_75
+2021-05-16   12:00   20:00   Conference    room_C     projector_4K
+                                                      screen_150
+2021-05-15   05:00   17:00   Meeting       room_A     projector_2K
+                                                      screen_100
+2021-05-11   11:00   19:00   *             *          screen_100
+                                                      
+2021-05-11   11:00   14:00   Meeting       room_C     projector_4K
+                                                      screen_150
+2021-05-13   09:00   11:00   Conference    room_C     webcam_UHD
+                                                      monitor_75
+2021-05-14   10:00   17:00   *             *          webcam_UHD
+                                                      
+2021-05-15   12:00   18:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-12   03:00   07:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-10   01:00   03:00   Conference    room_C     projector_2K
+                                                      screen_100
+2021-05-13   05:00   16:00   *             *          screen_100
+                                                      
+2021-05-15   05:00   13:00   *             *          monitor_50
+                                                      
+2021-05-13   03:00   08:00   *             *          projector_2K
+                                                      
+2021-05-12   01:00   04:00   *             *          webcam_FHD
+                                                      
+2021-05-14   18:00   28:00   *             *          screen_100
+                                                      
+2021-05-12   12:00   19:00   Presentation  room_C     webcam_UHD
+                                                      monitor_75
+2021-05-16   02:00   14:00   *             *          monitor_50
+                                                      
+2021-05-16   11:00   12:00   Presentation  room_C     projector_2K
+                                                      screen_100
+2021-05-14   11:00   21:00   Presentation  room_B     webcam_FHD
+                                                      monitor_50
+2021-05-10   10:00   22:00   Presentation  room_B     projector_2K
+                                                      screen_100
+2021-05-16   05:00   09:00   Meeting       room_A     webcam_UHD
+                                                      monitor_75
+2021-05-14   16:00   20:00   Meeting       room_C     *
+2021-05-11   03:00   04:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+
+===========================================================================
+*** Room Booking - REJECTED / FCFS ***
+
+Tenant_A has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   15:00   18:00   Meeting       *          *
+2021-05-10   05:00   16:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-10   06:00   10:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-14   21:00   25:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-13   23:00   32:00   Conference    *          webcam_FHD
+                                                      monitor_50
+2021-05-13   04:00   14:00   Meeting       *          *
+2021-05-13   04:00   06:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-16   10:00   21:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-12   16:00   25:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-15   20:00   25:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-11   17:00   19:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-15   11:00   16:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-15   09:00   19:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-13   15:00   25:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-11   01:00   13:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-15   23:00   29:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   07:00   15:00   Meeting       *          *
+2021-05-13   19:00   29:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-11   18:00   28:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+
+Tenant_B has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   22:00   24:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-14   13:00   21:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-15   22:00   32:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-13   23:00   30:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-16   19:00   24:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-10   11:00   16:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-15   23:00   32:00   *             *          webcam_FHD
+                                                      
+2021-05-13   09:00   21:00   *             *          screen_100
+                                                      
+2021-05-15   16:00   21:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-13   08:00   18:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-15   06:00   08:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-14   13:00   16:00   *             *          screen_150
+                                                      
+2021-05-10   02:00   04:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-16   13:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-13   07:00   13:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   13:00   18:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-11   08:00   20:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-10   02:00   05:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-11   22:00   26:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-16   21:00   24:00   *             *          screen_150
+                                                      
+2021-05-11   14:00   17:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-16   15:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+2021-05-15   12:00   22:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-16   15:00   16:00   *             *          projector_4K
+                                                      
+2021-05-14   20:00   31:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-14   23:00   28:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-12   04:00   15:00   Conference    *          projector_4K
+                                                      screen_150
+2021-05-11   17:00   28:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-14   06:00   11:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   07:00   15:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-13   17:00   28:00   Meeting       *          *
+2021-05-11   23:00   27:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-13   06:00   12:00   Conference    *          webcam_UHD
+                                                      monitor_75
+
+Tenant_D has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-12   23:00   32:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-14   11:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-16   07:00   16:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-13   06:00   09:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-15   17:00   24:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-10   17:00   26:00   Conference    *          webcam_FHD
+                                                      monitor_50
+2021-05-16   12:00   24:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-12   01:00   06:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-10   18:00   26:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-16   03:00   14:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-16   13:00   24:00   Presentation  *          webcam_FHD
+                                                      monitor_50
+2021-05-10   15:00   24:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-15   14:00   21:00   Conference    *          projector_4K
+                                                      screen_150
+2021-05-14   16:00   26:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-16   02:00   10:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-10   13:00   24:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-12   06:00   13:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-14   20:00   26:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   16:00   20:00   Meeting       *          webcam_FHD
+                                                      monitor_50
+2021-05-10   19:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-14   08:00   14:00   *             *          webcam_FHD
+                                                      
+
+Tenant_E has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   13:00   19:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-16   04:00   16:00   Conference    *          webcam_UHD
+                                                      monitor_75
+2021-05-12   12:00   23:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-15   12:00   22:00   Meeting       *          projector_2K
+                                                      screen_100
+2021-05-13   20:00   29:00   Meeting       *          projector_4K
+                                                      screen_150
+2021-05-11   22:00   26:00   Meeting       *          webcam_UHD
+                                                      monitor_75
+2021-05-16   07:00   18:00   Conference    *          projector_2K
+                                                      screen_100
+2021-05-12   04:00   05:00   *             *          monitor_50
+                                                      
+2021-05-10   01:00   04:00   Meeting       *          *
+2021-05-10   17:00   27:00   Meeting       *          *
+2021-05-14   03:00   08:00   Presentation  *          projector_2K
+                                                      screen_100
+2021-05-12   22:00   29:00   Meeting       *          *
+2021-05-10   08:00   19:00   Presentation  *          webcam_UHD
+                                                      monitor_75
+2021-05-13   18:00   27:00   Presentation  *          projector_4K
+                                                      screen_150
+2021-05-11   17:00   24:00   Presentation  *          projector_4K
+                                                      screen_150
+
+===========================================================================
+   - End - 

@@ -1,0 +1,59 @@
+*** Room Booking - ACCEPTED / FCFS ***
+
+Tenant_A has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   22:00   25:00   Meeting       room_A     *
+2021-05-13   04:00   08:00   Presentation  room_B     projector_2K
+                                                      screen_100
+
+Tenant_B has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   05:00   07:00   Meeting       room_C     *
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   10:00   17:00   Meeting       room_C     *
+2021-05-15   17:00   24:00   Presentation  room_A     webcam_UHD
+                                                      monitor_75
+2021-05-11   18:00   27:00   Meeting       room_C     *
+
+Tenant_D has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-16   19:00   24:00   Presentation  room_C     projector_4K
+                                                      screen_150
+2021-05-10   20:00   27:00   Conference    room_A     webcam_UHD
+                                                      monitor_75
+
+Tenant_E has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-13   02:00   12:00   Meeting       room_A     projector_4K
+                                                      screen_150
+2021-05-14   02:00   14:00   Conference    room_C     webcam_FHD
+                                                      monitor_50
+2021-05-10   00:00   01:00   Presentation  room_A     projector_4K
+                                                      screen_150
+
+===========================================================================
+*** Room Booking - REJECTED / FCFS ***
+
+Tenant_C has the following bookings:
+
+Date         Start   End     Type          Room       Device
+===========================================================================
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-10   10:00   17:00   Meeting       *          *
+2021-05-13   07:00   13:00   Presentation  *          projector_4K
+                                                      screen_150
+
+===========================================================================
+   - End - 
